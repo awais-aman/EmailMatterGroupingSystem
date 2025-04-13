@@ -1,0 +1,40 @@
+# Virtual environments
+project_venv/
+venv/
+.venv/
+env/
+
+# Python build and cache output
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+coverage/
+htmlcov/
+
+# JavaScript tooling (not used, kept from the original ignore list)
+node_modules/
+.next/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Model caches and run output
+.cache/
+out/
+tmp/
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+.github/
