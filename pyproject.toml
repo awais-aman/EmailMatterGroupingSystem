@@ -16,6 +16,9 @@ dependencies = [
     "scipy>=1.18,<2",
 ]
 
+[project.scripts]
+matter-grouping = "matter_grouping.cli:main"
+
 [project.optional-dependencies]
 sbert = ["sentence-transformers>=6.2,<7"]
 dev = ["pytest>=9.2,<10", "ruff>=0.17,<0.18"]
