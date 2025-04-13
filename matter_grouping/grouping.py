@@ -120,8 +120,9 @@ def cluster_vectors(
 
     Without a count, average-linkage agglomerative clustering merges emails
     until the cosine distance between groups passes `distance_threshold`.
-    Picking k by best silhouette was tried and dropped: on templated or
-    duplicated emails it always prefers one cluster per distinct text.
+    Picking k by best silhouette was tried and dropped: it rewards splitting
+    near-duplicate emails, and on the seed-7 synthetic mailbox it peaks at
+    k=5 rather than the true 4.
     """
     n = vectors.shape[0]
     if n == 0:
